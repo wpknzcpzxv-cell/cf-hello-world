@@ -11,4 +11,7 @@ export default {
       headers: { "content-type": "application/json; charset=utf-8" },
     });
   },
+  async scheduled(event, env, ctx) {
+    console.log("cron executed", new Date().toISOString());
+  },
 };
